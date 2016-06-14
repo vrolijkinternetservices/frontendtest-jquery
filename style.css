@@ -1,0 +1,109 @@
+/*
+ * Front-end developer test, v1.0a.
+ *
+ * CSS Styles
+ * 
+ * Written by Raymond Vrolijk
+ */
+
+@font-face {
+    font-family: 'tele-groteskfetregular';
+    src: url('fonts/telegroteskfet-webfont.eot');
+    src: url('fonts/telegroteskfet-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/telegroteskfet-webfont.woff') format('woff'), url('fonts/telegroteskfet-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+body {
+  margin: 0; 
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  font-family: "tele-groteskfetregular";  
+}
+
+form {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -290px;
+  margin-top: -262px;
+  padding: 40px;
+  width: 498px;
+  height: 522px;
+}
+
+input[type=text] {
+  background-clip: padding-box;
+  background-color: #fcfcfc;
+  border: 1px solid #b6b6b6;
+  border-radius: 3px;
+  padding: 13px;
+  width: 458px;
+}
+
+input[type=submit] {
+  background-color: #e20074;
+  border-bottom-color: #af005a;
+  color: #fff;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  background-clip: padding-box;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 0 0 2px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.7rem;
+  height: 45px;
+  line-height: 45px;
+  outline: 0 none;
+  overflow: hidden;
+  padding: 0 15px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: background-color 0.2s ease 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=submit]:hover {
+  background-color: #af005a;
+  border-color: #95004d;
+}
+
+label {
+  display: block;
+  color: #333;
+  display: block;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+}
+
+.field-error {
+  color: red;
+  font: 16px arial;
+  margin-top: 2px;
+}
+
+#form-successful {
+  display: none;
+  color: green;
+  font-size: 1.2rem;
+  margin-left: 20px;
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> 
+    <title>TEST</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="jquery/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    
+    <!-- START -->
+    <form method="post" id="form">
+      
+      <div class="form-row row-postalcode">
+        <label id="label-postalcode" for="postalcode">Postalcode</label>
+        <input type="text" name="postalcode" id="postalcode" />
+        <div class="field-error" id="error-postalcode">&nbsp;</div>
+      </div>
+      
+      <div class="form-row row-housenumber">
+        <label id="label-housenumber" for="housenumber">Housenumber</label>
+        <input type="text" name="housenumber" id="housenumber" />
+        <div class="field-error" id="error-housenumber">&nbsp</div>
+      </div>
+
+      <div class="form-row row-street">      
+        <label id="label-street" for="street">Street</label>
+        <input type="text" name="street" id="street" />
+        <div class="field-error" id="error-street">&nbsp</div>
+      </div>
+      
+      <div class="form-row row-city">
+        <label id="label-city" for="city">City</label>      
+        <input type="text" name="city" id="city" />
+        <div class="field-error" id="error-city">&nbsp</div>
+      </div>
+      
+      <input type="submit" value="Send" />
+      <div id="form-errors"></div>
+      <span id="form-successful">The form has been succesfully submitted</span>
+    </form>
+    <!-- END -->
+    
+  </body>
+</html>
